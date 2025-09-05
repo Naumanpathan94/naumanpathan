@@ -6,7 +6,7 @@ const projects = [
     title: "WATERMENON: University Portal",
     description: "Web-based admission portal to streamline university admissions with dedicated pages for applications, fee details, and meeting scheduling.",
     image: "https://via.placeholder.com/400x300/1e293b/6366f1?text=WATERMENON",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Naumanpathan94/Admission-Portal.git",
     features: [
       { icon: "🎓", text: "Developed comprehensive admission portal for university applications" },
       { icon: "📱", text: "Responsive design using Bootstrap4 and modern web technologies" },
@@ -18,7 +18,7 @@ const projects = [
     title: "RecipeSense: Recipe Recommendation System",
     description: "ML-powered recipe recommendation engine using TF-IDF vectorization and cosine similarity on 7,000+ recipes dataset.",
     image: "https://via.placeholder.com/400x300/1e293b/3b82f6?text=RecipeSense",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Naumanpathan94/RecipeSense.git",
     features: [
       { icon: "🤖", text: "Built ML-powered recommendation engine with TF-IDF vectorization" },
       { icon: "📊", text: "Processed 7,000+ recipes dataset with cosine similarity algorithms" },
@@ -30,7 +30,7 @@ const projects = [
     title: "Multilingual Toxicity Classification",
     description: "A multilingual toxicity detection system using XLM-RoBERTa and PyTorch, achieving 93% accuracy across 6 toxicity categories.",
     image: "https://via.placeholder.com/400x300/1e293b/10b981?text=Toxicity+Detection",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Naumanpathan94/Toxic-Comment-Classification-using-Deep-Learning.git",
     features: [
       { icon: "🌐", text: "Multilingual toxicity detection using XLM-RoBERTa transformer" },
       { icon: "📈", text: "Achieved 93% accuracy processing 360K+ comments across 6 categories" },
@@ -42,7 +42,7 @@ const projects = [
     title: "BuyWise: AI-Powered Product Insights",
     description: "Full-stack analytics platform processing 6,950+ Amazon reviews with multilingual sentiment analysis and AI recommendations.",
     image: "https://via.placeholder.com/400x300/1e293b/f59e0b?text=BuyWise",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Naumanpathan94/Buywise-Product-Analysis.git",
     features: [
       { icon: "📊", text: "Processed 6,950+ Amazon reviews with sentiment analysis" },
       { icon: "🤖", text: "AI-powered recommendation engine using TextBlob and Google Translate" },
