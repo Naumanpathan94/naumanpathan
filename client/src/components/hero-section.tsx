@@ -59,7 +59,7 @@ export default function HeroSection() {
             <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
             </svg>
-            Nerul, Navi Mumbai, India
+            Navi Mumbai, India
           </p>
           
           {/* Social Links */}
@@ -94,10 +94,10 @@ export default function HeroSection() {
           </div>
           
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 px-4 sm:px-0">
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 px-4 sm:px-0">
             <button 
               onClick={handleDownloadResume}
-              className="bg-primary text-primary-foreground px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 hover:scale-105 hover:glow-effect flex items-center justify-center text-sm sm:text-base"
+              className="bg-primary text-primary-foreground px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 hover:scale-105 hover:glow-effect inline-flex items-center justify-center text-sm sm:text-base"
               data-testid="button-download-resume"
             >
               <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
@@ -105,7 +105,7 @@ export default function HeroSection() {
             </button>
             <button 
               onClick={handleViewProjects}
-              className="glass-card px-6 sm:px-8 py-3 rounded-lg font-semibold hover:glow-effect transition-all duration-300 hover:scale-105 flex items-center justify-center text-sm sm:text-base"
+              className="glass-card px-6 sm:px-8 py-3 rounded-lg font-semibold hover:glow-effect transition-all duration-300 hover:scale-105 inline-flex items-center justify-center text-sm sm:text-base"
               data-testid="button-view-projects"
             >
               <Rocket className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
