@@ -47,15 +47,15 @@ export default function HeroSection() {
             Nauman Pathan
           </h1>
           
-          {/* Typing Animation */}
-          <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-4 h-8">
-            <span className={`${typingComplete ? '' : 'typing-animation'} inline-block`}>
+          {/* Typing Animation - Fixed for mobile */}
+          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8 px-2 sm:px-4 max-w-full mx-auto min-h-[3rem] flex items-center justify-center">
+            <span className={`${typingComplete ? '' : 'typing-animation'} block text-center leading-relaxed`}>
               Web Applications Developer @ Campus Credentials
             </span>
           </div>
           
           {/* Location */}
-          <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto flex items-center justify-center flex-wrap">
+          <p className="text-base sm:text-lg text-muted-foreground mb-10 sm:mb-12 max-w-2xl mx-auto flex items-center justify-center flex-wrap">
             <svg className="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
             </svg>
