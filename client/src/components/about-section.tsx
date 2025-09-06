@@ -2,12 +2,12 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Bot, Car, Brain, Code } from "lucide-react";
 
 const colorTags = [
-  { name: "Red", color: "bg-red-500/20 text-red-400" },
-  { name: "Pink", color: "bg-pink-500/20 text-pink-400" },
-  { name: "Orange", color: "bg-orange-500/20 text-orange-400" },
-  { name: "Cyberpunk", color: "bg-purple-500/20 text-purple-400" },
-  { name: "Green", color: "bg-green-500/20 text-green-400" },
-  { name: "Blue", color: "bg-blue-500/20 text-blue-400" },
+  { name: "AI & Machine Learning", color: "bg-red-500/20 text-red-400" },
+  { name: "Full-Stack Development", color: "bg-pink-500/20 text-pink-400" },
+  { name: "Data Science & Analytics", color: "bg-orange-500/20 text-orange-400" },
+  { name: "Cloud Computing & DevOps", color: "bg-purple-500/20 text-purple-400" },
+  { name: "Database Design & Management", color: "bg-green-500/20 text-green-400" },
+  { name: "Natural Language Processing & Computer Vision", color: "bg-blue-500/20 text-blue-400" },
 ];
 
 const specializations = [
