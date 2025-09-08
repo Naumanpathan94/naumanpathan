@@ -5,7 +5,7 @@ const experiences = [
   {
     title: "Web Applications Developer Intern",
     company: "Campus Credentials",
-    companyUrl: "#",
+    companyUrl: "https://campuscredentials.com/",
     location: "Mumbai, India",
     period: "August 2025 - September 2025",
     summary: "Architecting AI-driven applications and enterprise solutions using SDLC principles while implementing innovative digital transformation technologies.",
