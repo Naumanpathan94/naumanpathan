@@ -46,7 +46,7 @@ export default function HeroSection() {
           {/* Typing Animation - Fixed for mobile */}
           <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8 px-2 sm:px-4 max-w-full mx-auto min-h-[3rem] flex items-center justify-center">
             <span className={`${typingComplete ? '' : 'typing-animation'} block text-center leading-relaxed`}>
-              Web Applications Developer @ Campus Credentials
+              Computer Engineering @DYPU-RAIT-2026
             </span>
           </div>
           

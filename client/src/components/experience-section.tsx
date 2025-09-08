@@ -7,7 +7,7 @@ const experiences = [
     company: "Campus Credentials",
     companyUrl: "#",
     location: "Mumbai, India",
-    period: "August 2025 - Present",
+    period: "August 2025 - September 2025",
     summary: "Architecting AI-driven applications and enterprise solutions using SDLC principles while implementing innovative digital transformation technologies.",
     responsibilities: [
       "Architected AI-driven resume analysis platform automating candidate evaluation using SDLC principles",
