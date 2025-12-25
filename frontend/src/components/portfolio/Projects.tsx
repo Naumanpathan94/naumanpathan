@@ -6,40 +6,41 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const projects = [
   {
     title: "Intelligent Bank Customer Churn Prediction",
-    description: "ANN-TabPFN ensemble model on 10K Kaggle dataset achieving 91.3% accuracy. Implemented α = 0.3 weighted ensemble with preprocessing & 5-fold CV, delivering 0.924 AUC and 89.7% precision. Built interactive Streamlit dashboard enabling 15-25% better retention and ~$50K-$100K savings per 10K customers.",
+    description: "ANN-TabPFN ensemble model on 10K Kaggle dataset achieving 91.3% accuracy.\n\n• Implemented α = 0.3 weighted ensemble with preprocessing & 5-fold CV\n• Delivered 0.924 AUC and 89.7% precision\n• Built interactive Streamlit dashboard\n• Enables 15-25% better retention and ~$50K-$100K savings per 10K customers",
     tags: ["Python", "PyTorch", "TabPFN", "Streamlit", "Scikit-learn"],
     icon: Folder,
     github: "https://github.com/Naumanpathan94/Bank-Customer-Churn-Prediction",
   },
   {
     title: "WATERMENON: University Portal",
-    description: "Web-based admission portal to streamline university admissions with dedicated pages for applications, fee details, and meeting scheduling. Responsive design with interactive UI elements.",
+    description: "Web-based admission portal to streamline university admissions.\n\n• Dedicated pages for applications, fee details, and meeting scheduling\n• Responsive design with interactive UI elements",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap4"],
     icon: Folder,
     github: "https://github.com/Naumanpathan94/Admission-Portal",
   },
   {
     title: "RecipeSense: Recommendation System",
-    description: "ML-powered recipe recommendation engine using TF-IDF vectorization and cosine similarity on 7,000+ recipes dataset. Full-stack React-Flask web app deployed on circuit platform.",
+    description: "ML-powered recipe recommendation engine.\n\n• TF-IDF vectorization and cosine similarity on 7,000+ recipes dataset\n• Full-stack React-Flask web app deployed on circuit platform",
     tags: ["Python", "React", "Flask", "Tailwind CSS", "Sci-kit Learn"],
     icon: Folder,
     github: "https://github.com/Naumanpathan94/RecipeSense",
   },
   {
     title: "Multilingual Toxicity Classification",
-    description: "Multilingual toxicity detection system using XLM-RoBERTa and PyTorch. Achieved 93% accuracy processing 360K+ comments across 6 toxicity categories. Deployed on college GPU server with Streamlit.",
+    description: "Multilingual toxicity detection system using XLM-RoBERTa and PyTorch.\n\n• Achieved 93% accuracy processing 360K+ comments across 6 toxicity categories\n• Deployed on college GPU server with Streamlit",
     tags: ["Python", "XLM-RoBERTa", "PyTorch", "Streamlit", "TensorFlow"],
     icon: Folder,
     github: "https://github.com/Naumanpathan94/Toxic-Comment-Classification-using-Deep-Learning",
   },
   {
     title: "BuyWise: AI-Powered Product Insights",
-    description: "Full-stack analytics platform processing 6,950+ Amazon reviews with multilingual sentiment analysis. AI-powered recommendation engine with responsive dashboards and mobile optimization.",
+    description: "Full-stack analytics platform processing 6,950+ Amazon reviews.\n\n• Multilingual sentiment analysis\n• AI-powered recommendation engine\n• Responsive dashboards and mobile optimization",
     tags: ["Python", "Flask", "NLTK", "TextBlob", "GoogleTrans"],
     icon: Folder,
     github: "https://github.com/Naumanpathan94/Buywise-Product-Analysis",
   }
 ];
+
 
 export function Projects() {
   return (
@@ -53,9 +54,20 @@ export function Projects() {
             </h2>
             <p className="text-sm md:text-base text-muted-foreground">Selection of projects showcasing AI, ML, and full-stack development.</p>
           </div>
-          <Button variant="outline" className="gap-2 w-full md:w-auto">
-            <Github size={16} /> View GitHub
-          </Button>
+          <Button
+  variant="outline"
+  className="gap-2 w-full md:w-auto"
+  asChild
+>
+  <a
+    href="https://github.com/Naumanpathan94"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Github size={16} />
+    View GitHub
+  </a>
+</Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
@@ -79,7 +91,7 @@ export function Projects() {
                   <CardTitle className="mt-3 text-lg group-hover:text-primary transition-colors">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed whitespace-pre-line">
                     {project.description}
                   </p>
                 </CardContent>

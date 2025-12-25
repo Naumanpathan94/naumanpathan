@@ -15,7 +15,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary mb-4 md:mb-6">
-            Hi, I'm Nauman Pathan Computer Engineering | DYPU-RAIT 2026
+            Hi, I'm Nauman Pathan Computer Engineering <br />DYPU-RAIT 2026
           </h1>
 
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mb-8 md:mb-10 leading-relaxed">
