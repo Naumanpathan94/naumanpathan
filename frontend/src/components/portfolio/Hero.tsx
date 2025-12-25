@@ -55,8 +55,11 @@ export function Hero() {
                 <p className="font-medium text-sm md:text-base">Web Applications Developer Intern</p>
                 <p className="text-xs md:text-sm text-muted-foreground">Campus Credentials, Mumbai</p>
                 <p className="text-xs md:text-sm text-muted-foreground">August 2025 - September 2025</p>
-                <p className="text-xs md:text-sm text-muted-foreground mt-2">• Worked on AI Resume Analysis Tool implementing Authentication , Database and Ollama AI.
-                \n • Delivered a responsive corporate landing page.</p>
+                <ul className="text-xs md:text-sm text-muted-foreground mt-2 list-disc list-inside">
+  <li>Worked on AI Resume Analysis Tool implementing authentication, database, and Ollama AI.</li>
+  <li>Delivered a responsive corporate landing page.</li>
+</ul>
+
               </div>
             </div>
           </div>
