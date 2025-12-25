@@ -1,5 +1,8 @@
 import { ArrowRight, Download, Code2, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+const handleDownloadResume = () => {
+    window.print();
+  };
 
 export function Hero() {
   return (
@@ -12,7 +15,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary mb-4 md:mb-6">
-            Full-Stack Developer & AI Enthusiast
+            Hi, I'm Nauman Pathan — Computer Engineering | DYPU-RAIT 2026
           </h1>
 
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mb-8 md:mb-10 leading-relaxed">
@@ -23,7 +26,7 @@ export function Hero() {
             <Button size="lg" className="gap-2 h-11 md:h-12 px-5 md:px-6 text-sm md:text-base w-full sm:w-auto" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
               View Projects <ArrowRight size={18} />
             </Button>
-            <Button size="lg" variant="outline" className="gap-2 h-11 md:h-12 px-5 md:px-6 text-sm md:text-base w-full sm:w-auto">
+            <Button onClick={handleDownloadResume} size="lg" variant="outline" className="gap-2 h-11 md:h-12 px-5 md:px-6 text-sm md:text-base w-full sm:w-auto">
               Download Resume <Download size={18} />
             </Button>
           </div>
@@ -32,7 +35,7 @@ export function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
             <div className="bg-card/50 border border-border/50 rounded-lg p-5 md:p-6 hover:border-primary/50 hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-3 md:mb-4">
-                <Code2 size={20} className="text-primary flex-shrink-0" strokeWidth={1.5} />
+                <Code2 size={20} className="text-primary shrink-0" strokeWidth={1.5} />
                 <h3 className="font-semibold text-base md:text-lg">Education</h3>
               </div>
               <div className="space-y-1 text-sm">
@@ -52,7 +55,8 @@ export function Hero() {
                 <p className="font-medium text-sm md:text-base">Web Applications Developer Intern</p>
                 <p className="text-xs md:text-sm text-muted-foreground">Campus Credentials, Mumbai</p>
                 <p className="text-xs md:text-sm text-muted-foreground">August 2025 - September 2025</p>
-                <p className="text-xs md:text-sm text-muted-foreground mt-2">Architecting AI-driven applications and enterprise solutions using SDLC principles.</p>
+                <p className="text-xs md:text-sm text-muted-foreground mt-2">• Worked on AI Resume Analysis Tool implementing Authentication , Database and Ollama AI.
+• Delivered a responsive corporate landing page.</p>
               </div>
             </div>
           </div>

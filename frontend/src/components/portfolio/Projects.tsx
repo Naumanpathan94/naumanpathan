@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Folder, TrendingUp, Zap, Award } from "lucide-react";
+import { ExternalLink, Github, Folder} from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,41 +8,36 @@ const projects = [
     title: "Intelligent Bank Customer Churn Prediction",
     description: "ANN-TabPFN ensemble model on 10K Kaggle dataset achieving 91.3% accuracy. Implemented α = 0.3 weighted ensemble with preprocessing & 5-fold CV, delivering 0.924 AUC and 89.7% precision. Built interactive Streamlit dashboard enabling 15-25% better retention and ~$50K-$100K savings per 10K customers.",
     tags: ["Python", "PyTorch", "TabPFN", "Streamlit", "Scikit-learn"],
-    icon: TrendingUp,
-    github: "#",
-    live: "#",
+    icon: Folder,
+    github: "https://github.com/Naumanpathan94/Bank-Customer-Churn-Prediction",
   },
   {
     title: "WATERMENON: University Portal",
     description: "Web-based admission portal to streamline university admissions with dedicated pages for applications, fee details, and meeting scheduling. Responsive design with interactive UI elements.",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap4"],
     icon: Folder,
-    github: "#",
-    live: "#",
+    github: "https://github.com/Naumanpathan94/Admission-Portal",
   },
   {
     title: "RecipeSense: Recommendation System",
     description: "ML-powered recipe recommendation engine using TF-IDF vectorization and cosine similarity on 7,000+ recipes dataset. Full-stack React-Flask web app deployed on circuit platform.",
     tags: ["Python", "React", "Flask", "Tailwind CSS", "Sci-kit Learn"],
-    icon: Zap,
-    github: "#",
-    live: "#",
+    icon: Folder,
+    github: "https://github.com/Naumanpathan94/RecipeSense",
   },
   {
     title: "Multilingual Toxicity Classification",
     description: "Multilingual toxicity detection system using XLM-RoBERTa and PyTorch. Achieved 93% accuracy processing 360K+ comments across 6 toxicity categories. Deployed on college GPU server with Streamlit.",
     tags: ["Python", "XLM-RoBERTa", "PyTorch", "Streamlit", "TensorFlow"],
-    icon: Award,
-    github: "#",
-    live: "#",
+    icon: Folder,
+    github: "https://github.com/Naumanpathan94/Toxic-Comment-Classification-using-Deep-Learning",
   },
   {
     title: "BuyWise: AI-Powered Product Insights",
     description: "Full-stack analytics platform processing 6,950+ Amazon reviews with multilingual sentiment analysis. AI-powered recommendation engine with responsive dashboards and mobile optimization.",
     tags: ["Python", "Flask", "NLTK", "TextBlob", "GoogleTrans"],
-    icon: TrendingUp,
-    github: "#",
-    live: "#",
+    icon: Folder,
+    github: "https://github.com/Naumanpathan94/Buywise-Product-Analysis",
   }
 ];
 
@@ -77,11 +72,6 @@ export function Projects() {
                       <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-primary" asChild>
                         <a href={project.github} target="_blank" rel="noopener noreferrer" title="GitHub Repository">
                           <Github size={18} />
-                        </a>
-                      </Button>
-                      <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-primary" asChild>
-                        <a href={project.live} target="_blank" rel="noopener noreferrer" title="Live Project">
-                          <ExternalLink size={18} />
                         </a>
                       </Button>
                     </div>
