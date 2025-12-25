@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Code2, Zap } from "lucide-react";
+import { ArrowRight, Download, University, BriefcaseBusiness } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const handleDownloadResume = () => {
     window.print();
@@ -35,7 +35,7 @@ export function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
             <div className="bg-card/50 border border-border/50 rounded-lg p-5 md:p-6 hover:border-primary/50 hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-3 md:mb-4">
-                <Code2 size={20} className="text-primary shrink-0" strokeWidth={1.5} />
+                <University size={20} className="text-primary shrink-0" strokeWidth={1.5} />
                 <h3 className="font-semibold text-base md:text-lg">Education</h3>
               </div>
               <div className="space-y-1 text-sm">
@@ -48,7 +48,7 @@ export function Hero() {
             </div>
             <div className="bg-card/50 border border-border/50 rounded-lg p-5 md:p-6 hover:border-primary/50 hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-3 md:mb-4">
-                <Zap size={20} className="text-primary flex-shrink-0" strokeWidth={1.5} />
+                <BriefcaseBusiness size={20} className="text-primary flex-shrink-0" strokeWidth={1.5} />
                 <h3 className="font-semibold text-base md:text-lg">Experience</h3>
               </div>
               <div className="space-y-1 text-sm">
