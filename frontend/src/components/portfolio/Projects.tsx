@@ -23,7 +23,7 @@ const projects = [
     description: "ML-powered recipe recommendation engine.\n\n• TF-IDF vectorization and cosine similarity on 7,000+ recipes dataset\n• Full-stack React-Flask web app deployed on circuit platform",
     tags: ["Python", "React", "Flask", "Tailwind CSS", "Sci-kit Learn"],
     icon: Folder,
-    github: "https://github.com/Naumanpathan94/RecipeSense",
+    github: "https://github.com/Naumanpathan94/Whats-for-dinner",
   },
   {
     title: "Multilingual Toxicity Classification",

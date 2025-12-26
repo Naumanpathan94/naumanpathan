@@ -37,12 +37,12 @@ export function Contact() {
 
             <div className="flex gap-3 mt-6 md:mt-8">
               <Button variant="outline" size="icon" className="h-10 w-10 shrink-0" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <a href="https://github.com/Naumanpathan94" target="_blank" rel="noopener noreferrer" title="GitHub">
                   <Github size={18} />
                 </a>
               </Button>
               <Button variant="outline" size="icon" className="h-10 w-10 shrink-0" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/naumanpathan94" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                   <Linkedin size={18} />
                 </a>
               </Button>
