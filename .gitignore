@@ -1,6 +1,18 @@
-node_modules
-dist
+# dependencies
+node_modules/
+
+# builds
+dist/
+build/
+
+# macOS
 .DS_Store
-server/public
+
+# server public uploads/build output
+server/public/
+
+# Vite config backups
 vite.config.ts.*
+
+# archives
 *.tar.gz
