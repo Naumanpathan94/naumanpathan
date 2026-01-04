@@ -11,7 +11,7 @@ export function Hero() {
   ];
 
   return (
-    <section className="relative pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
       {/* Grid Background */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -65,7 +65,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
           {/* Enhanced Avatar Section */}
-          <div className="mb-12 md:mb-14 flex justify-center">
+          <div className="mb-14 md:mb-16 flex justify-center">
             <div className="relative w-28 h-28 md:w-32 md:h-32 group">
               <div className="avatar-glow-effect transition-all duration-700 group-hover:opacity-40 group-hover:scale-105"></div>
               <div className="avatar-frame"></div>
@@ -73,7 +73,7 @@ export function Hero() {
               
               {/* Avatar Image */}
               <img 
-                src="/avatar.png" 
+                src="/avatar_final.jpg" 
                 alt="Nauman Pathan" 
                 className="relative z-10 w-full h-full rounded-2xl border border-white/10 shadow-xl object-cover object-top hover:grayscale-0 transition-all duration-500 scale-[0.98] group-hover:scale-100 opacity-90 group-hover:opacity-100" 
               />

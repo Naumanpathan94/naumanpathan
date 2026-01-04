@@ -1,4 +1,5 @@
 import { Mail, Linkedin, Github, ArrowRight, Globe, Send, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Contact() {
   const contactLinks = [
@@ -27,7 +28,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
             {contactLinks.map((link) => {
               const Icon = link.icon;
               return (
@@ -36,23 +37,21 @@ export function Contact() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative p-6 sm:p-8 rounded-3xl backdrop-blur-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-all duration-500 overflow-hidden"
+                  className="group relative p-6 md:p-8 rounded-3xl backdrop-blur-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-all duration-500 overflow-hidden"
                 >
                   <div className="absolute top-0 right-0 -mr-10 -mt-10 w-32 h-32 bg-primary/5 rounded-full blur-[40px] group-hover:bg-primary/10 transition-colors"></div>
                   
-                  <div className="relative z-10 flex items-center gap-3 sm:gap-4 lg:gap-6 w-full h-full"> {/* lg:gap-6 for desktop, h-full for alignment */}
-                    <div className="p-3 sm:p-4 bg-primary/10 rounded-2xl text-primary group-hover:scale-110 transition-transform duration-500 flex-shrink-0">
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={1.5} />
+                  <div className="relative z-10 flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6 text-center sm:text-left">
+                    <div className="p-4 bg-primary/10 rounded-2xl text-primary group-hover:scale-110 transition-transform duration-500 flex-shrink-0">
+                      <Icon size={24} strokeWidth={1.5} />
                     </div>
-                    <div className="min-w-0 flex-1">
-                      <p className="text-xs sm:text-sm font-mono text-primary mb-1 uppercase tracking-widest">
-                        {link.name}
-                      </p>
-                      <p className="text-sm sm:text-base lg:text-xl font-bold text-white group-hover:text-primary transition-colors whitespace-nowrap sm:whitespace-normal overflow-hidden break-normal sm:break-all">
+                    <div className="min-w-0 flex-1 w-full">
+                      <p className="text-xs md:text-sm font-mono text-primary mb-1 uppercase tracking-widest">{link.name}</p>
+                      <p className="text-base md:text-xl font-bold text-white group-hover:text-primary transition-colors break-all sm:break-normal">
                         {link.value}
                       </p>
                     </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-auto flex-shrink-0 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-primary" />
+                    <ArrowRight size={20} className="ml-auto opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-primary flex-shrink-0 hidden lg:block" />
                   </div>
                 </a>
               );

@@ -124,8 +124,7 @@ export function CertificationsCarousel() {
             Professional certifications and credentials earned through rigorous training.
           </p>
 
-          {/* Carousel Container */}
-          <div className="relative group">
+          <div className="relative group overflow-hidden md:overflow-visible">
             {/* Carousel */}
             <div
               ref={containerRef}
