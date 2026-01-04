@@ -1,4 +1,4 @@
-import { ExternalLink, Github, TrendingUp, Laptop, ShieldCheck, Database, BarChart3, ChevronRight } from "lucide-react";
+import { ExternalLink, Github, TrendingUp, Laptop, ShieldCheck, Database, BarChart3, ChevronRight, Folder } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -8,30 +8,35 @@ const projects = [
     description: "ANN-TabPFN ensemble model achieving 91.3% accuracy on 10K customer dataset. Implemented weighted ensemble with preprocessing and 5-fold cross-validation.",
     tags: ["Python", "PyTorch", "TabPFN", "Streamlit", "Scikit-learn"],
     icon: TrendingUp,
+    github: "https://github.com/Naumanpathan94/Bank-Customer-Churn-Prediction",
   },
   {
     title: "WATERMENON: University Portal",
     description: "Web-based admission portal streamlining university admissions with responsive design and interactive UI for applications and fee management.",
     tags: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
     icon: Laptop,
+    github: "https://github.com/Naumanpathan94/Admission-Portal",
   },
   {
     title: "RecipeSense: ML Recommendation Engine",
     description: "ML-powered recipe recommendation using TF-IDF vectorization and cosine similarity on 7K+ recipes. Full-stack React-Flask application.",
     tags: ["Python", "React", "Flask", "Tailwind", "Scikit-learn"],
     icon: Database,
+    github: "https://github.com/Naumanpathan94/Whats-for-dinner",
   },
   {
     title: "Multilingual Toxicity Classifier",
     description: "XLM-RoBERTa based toxicity detection system. 93% accuracy processing 360K+ comments across 6 categories. Deployed on GPU server.",
     tags: ["Python", "XLM-RoBERTa", "PyTorch", "Streamlit", "NLP"],
     icon: ShieldCheck,
+    github: "https://github.com/Naumanpathan94/Toxic-Comment-Classification-using-Deep-Learning",
   },
   {
     title: "BuyWise: AI Analytics Platform",
     description: "Full-stack platform processing 6,950+ Amazon reviews with multilingual sentiment analysis and AI recommendations.",
     tags: ["Python", "Flask", "NLTK", "TextBlob", "Analytics"],
     icon: BarChart3,
+    github: "https://github.com/Naumanpathan94/Buywise-Product-Analysis",
   }
 ];
 
@@ -73,9 +78,11 @@ export function Projects() {
                             variant="ghost" 
                             size="icon" 
                             className="h-10 w-10 rounded-full border border-white/5 hover:border-primary/30 hover:bg-primary/5 text-muted-foreground hover:text-primary transition-all"
-                            onClick={() => window.open("https://github.com/Naumanpathan94", "_blank")}
+                            asChild
                           >
-                            <Github size={20} />
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" title={project.title + " GitHub Repository"}>
+                              <Github size={20} />
+                            </a>
                           </Button>
                         </div>
                       </div>
@@ -103,9 +110,11 @@ export function Projects() {
               size="lg" 
               variant="outline" 
               className="gap-2 h-14 px-10 rounded-full border-white/10 hover:bg-white/5 text-lg font-semibold transition-all hover:scale-105 active:scale-95"
-              onClick={() => window.open("https://github.com/Naumanpathan94", "_blank")}
+              asChild
             >
-              <Github size={20} /> View All on GitHub <ChevronRight size={20} className="ml-2" />
+              <a href="https://github.com/Naumanpathan94" target="_blank" rel="noopener noreferrer">
+                <Github size={20} /> View All on GitHub <ChevronRight size={20} className="ml-2" />
+              </a>
             </Button>
           </div>
         </div>
