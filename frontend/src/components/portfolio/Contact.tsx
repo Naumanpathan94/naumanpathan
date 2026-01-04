@@ -1,79 +1,59 @@
-import { Mail, Linkedin, Github, MessageSquare, Lightbulb, Users } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowRight, Globe, Send, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Contact() {
-  return (
-    <section id="contact" className="py-16 md:py-24 bg-muted/30 border-t border-border">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-24 items-center">
-          <div>
-            <div className="inline-block p-2 md:p-3 rounded-2xl bg-primary/5 text-primary mb-4 md:mb-6">
-              <MessageSquare size={28} strokeWidth={1.5} />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3 md:mb-4">Let's work together</h2>
-            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
-              I'm open to opportunities in AI development, full-stack engineering, and innovative projects. 
-              Feel free to reach out for collaborations or discussions.
-            </p>
-            
-            <div className="flex flex-col gap-4">
-              <a 
-                href="mailto:naumanpathan78@gmail.com"
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
-              >
-                <Mail size={18} strokeWidth={1.5} className="shrink-0" />
-                <span className="text-sm md:text-base break-all">naumanpathan78@gmail.com</span>
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
-              >
-                <Linkedin size={18} strokeWidth={1.5} className="shrink-0" />
-                <span className="text-sm md:text-base">LinkedIn</span>
-              </a>
-            </div>
+  const contactLinks = [
+    { name: "Email", value: "naumanpathan78@gmail.com", icon: Mail, href: "mailto:naumanpathan78@gmail.com" },
+    { name: "LinkedIn", value: "LinkedIn Profile", icon: Linkedin, href: "https://www.linkedin.com/in/naumanpathan94/" },
+    { name: "GitHub", value: "GitHub Profile", icon: Github, href: "https://github.com/Naumanpathan94" },
+    { name: "Portfolio", value: "naumanpathan.me", icon: Globe, href: "https://naumanpathan.me" },
+  ];
 
-            <div className="flex gap-3 mt-6 md:mt-8">
-              <Button variant="outline" size="icon" className="h-10 w-10 shrink-0" asChild>
-                <a href="https://github.com/Naumanpathan94" target="_blank" rel="noopener noreferrer" title="GitHub">
-                  <Github size={18} />
-                </a>
-              </Button>
-              <Button variant="outline" size="icon" className="h-10 w-10 shrink-0" asChild>
-                <a href="https://www.linkedin.com/in/naumanpathan94" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                  <Linkedin size={18} />
-                </a>
-              </Button>
+  return (
+    <section id="contact" className="py-20 md:py-32 border-t border-white/5 bg-gradient-to-b from-black/40 to-background">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
+            <div>
+              <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
+                Let's Collaborate
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground font-light max-w-xl">
+                Open for collaboration on exciting projects, internships, and full-time opportunities.
+              </p>
+            </div>
+            <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl w-fit">
+              <MapPin size={16} className="text-primary animate-pulse" />
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-white/80">Mumbai, India</span>
             </div>
           </div>
 
-          <div className="space-y-4 md:space-y-6">
-            <div className="bg-card p-5 md:p-8 rounded-lg md:rounded-2xl border border-border shadow-sm hover:border-primary/50 hover:shadow-md transition-all duration-300">
-              <div className="flex items-center gap-3 mb-3 md:mb-4">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary shrink-0">
-                  <Lightbulb size={20} strokeWidth={1.5} />
-                </div>
-                <h3 className="font-semibold text-base md:text-lg">Looking for collaboration</h3>
-              </div>
-              <p className="text-sm md:text-base text-muted-foreground">Whether it's collaboration on an exciting project, a freelance opportunity, or just having a conversation about technology, I'd love to hear from you.</p>
-            </div>
-
-            <div className="bg-card p-5 md:p-8 rounded-lg md:rounded-2xl border border-border shadow-sm hover:border-primary/50 hover:shadow-md transition-all duration-300">
-              <div className="flex items-center gap-3 mb-3 md:mb-4">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary shrink-0">
-                  <Users size={20} strokeWidth={1.5} />
-                </div>
-                <h3 className="font-semibold text-base md:text-lg">Available for</h3>
-              </div>
-              <ul className="text-sm text-muted-foreground space-y-2">
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/60 shrink-0"></span> <span>AI/ML Development Projects</span></li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/60 shrink-0"></span> <span>Full-Stack Web Applications</span></li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/60 shrink-0"></span> <span>Data Science & Analytics</span></li>
-                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary/60 shrink-0"></span> <span>Freelance Opportunities</span></li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {contactLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a 
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative p-8 rounded-3xl backdrop-blur-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-all duration-500 overflow-hidden"
+                >
+                  <div className="absolute top-0 right-0 -mr-10 -mt-10 w-32 h-32 bg-primary/5 rounded-full blur-[40px] group-hover:bg-primary/10 transition-colors"></div>
+                  
+                  <div className="relative z-10 flex items-center gap-6">
+                    <div className="p-4 bg-primary/10 rounded-2xl text-primary group-hover:scale-110 transition-transform duration-500">
+                      <Icon size={24} strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <p className="text-sm font-mono text-primary mb-1 uppercase tracking-widest">{link.name}</p>
+                      <p className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors">{link.value}</p>
+                    </div>
+                    <ArrowRight size={20} className="ml-auto opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-primary" />
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

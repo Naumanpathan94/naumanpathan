@@ -1,101 +1,56 @@
-import { 
-  Code2, Database, Globe, Brain, GitBranch, Zap
-} from "lucide-react";
-
-const skillsByCategory = [
-  {
-    category: "Programming",
-    icon: Code2,
-    skills: ["Python", "JavaScript/TypeScript", "Java", "C"]
-  },
-  {
-    category: "AI & Data Science",
-    icon: Brain,
-    skills: ["TensorFlow", "PyTorch", "Sci-kit Learn", "XLM-RoBERTa"]
-  },
-  {
-    category: "Web & Cloud",
-    icon: Globe,
-    skills: ["React", "Flask", "Node.js", "Docker"]
-  },
-  {
-    category: "Databases",
-    icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "Firebase"]
-  },
-  {
-    category: "Tools & DevOps",
-    icon: GitBranch,
-    skills: ["Git", "REST APIs", "System Design", "Streamlit"]
-  },
-  {
-    category: "Specialized",
-    icon: Zap,
-    skills: ["NLP", "Computer Vision", "GCP", "NLTK"]
-  }
+const topSkills = [
+  "Computer Engineering",
+  "Data Science",
+  "AI Technologies",
 ];
 
-const allSkills = [
-  "Python", "React", "Flask", "Node.js", "JavaScript", "TypeScript",
-  "TensorFlow", "PyTorch", "Sci-kit Learn", "XLM-RoBERTa",
+const technologies = [
+  "Python", "JavaScript/TypeScript", "Java", "C", "React", "Next.js", "Node.js", "Flask", 
+  "TensorFlow", "PyTorch", "Scikit-learn", "XLM-RoBERTa",
   "PostgreSQL", "MongoDB", "MySQL", "Firebase",
-  "Docker", "REST APIs", "System Design", "NLP", "Computer Vision",
-  "GCP", "Streamlit", "NLTK", "TextBlob"
+  "Tailwind CSS", "Docker", "Git", "REST APIs", "NLP", "Computer Vision"
 ];
 
 export function Skills() {
   return (
-    <section id="skills" className="py-16 md:py-24 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] dark:bg-[radial-gradient(#1f2937_1px,transparent_1px)]"></div>
-      
+    <section id="skills" className="py-20 md:py-32 bg-black/40 border-t border-white/5">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-3 md:mb-4">Technical Skills</h2>
-          <p className="text-sm md:text-base text-muted-foreground">
-            Proficiency in AI/ML, full-stack development, and cloud technologies. Focused on building scalable, intelligent systems.
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
+            Top Skills
+          </h2>
+          <p className="text-lg md:text-2xl text-muted-foreground mb-16 md:mb-20 font-light leading-relaxed">
+            Core competencies and technical expertise areas.
           </p>
-        </div>
 
-        {/* Skills by Category */}
-        <div className="mb-12 md:mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-            {skillsByCategory.map((category) => {
-              const IconComponent = category.icon;
-              return (
-                <div key={category.category} className="bg-card border border-border/50 rounded-lg p-5 md:p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-md">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="p-2 bg-primary/10 rounded-md text-primary flex-shrink-0">
-                      <IconComponent size={18} strokeWidth={1.5} />
-                    </div>
-                    <h3 className="font-semibold text-sm md:text-base">{category.category}</h3>
-                  </div>
-                  <div className="space-y-2">
-                    {category.skills.map((skill) => (
-                      <div key={skill} className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary/40 flex-shrink-0"></div>
-                        <span>{skill}</span>
-                      </div>
-                    ))}
-                  </div>
+          {/* Top Skills */}
+          <div className="mb-20 md:mb-28">
+            <div className="flex flex-wrap gap-4 md:gap-6">
+              {topSkills.map((skill) => (
+                <div
+                  key={skill}
+                  className="group relative px-8 py-5 rounded-2xl backdrop-blur-xl bg-primary/10 border border-primary/20 text-xl md:text-2xl font-bold text-primary hover:bg-primary/20 hover:border-primary/40 transition-all duration-500 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <span className="relative z-10">{skill}</span>
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* All Skills Grid */}
-        <div className="border-t border-border/30 pt-12 md:pt-14">
-          <h3 className="text-lg md:text-xl font-semibold mb-6 text-center">Complete Tech Stack</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-            {allSkills.map((skill, index) => (
-              <div
-                key={skill}
-                className="flex items-center justify-center p-3 md:p-4 bg-card border border-border/60 rounded-lg hover:border-primary/30 hover:shadow-md transition-all duration-300 group"
-              >
-                <span className="font-medium text-xs md:text-sm text-center group-hover:text-primary transition-colors">{skill}</span>
-              </div>
-            ))}
+          {/* All Technologies */}
+          <div className="pt-16 md:pt-20 border-t border-white/5">
+            <h3 className="text-2xl md:text-3xl font-bold mb-10 text-white">Experienced In</h3>
+            <div className="flex flex-wrap gap-3 md:gap-4">
+              {technologies.map((tech) => (
+                <div
+                  key={tech}
+                  className="px-6 py-3 rounded-full backdrop-blur-xl bg-white/5 border border-white/10 text-base md:text-lg font-medium text-foreground/80 hover:border-primary/40 hover:text-primary transition-all duration-300 cursor-default"
+                >
+                  {tech}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
