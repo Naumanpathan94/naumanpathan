@@ -36,23 +36,23 @@ export function Contact() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative p-8 rounded-3xl backdrop-blur-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-all duration-500 overflow-hidden min-h-[120px] flex items-center" // Added min-h and flex for consistent layout
+                  className="group relative p-6 sm:p-8 rounded-3xl backdrop-blur-xl bg-white/5 border border-white/10 hover:border-primary/30 transition-all duration-500 overflow-hidden"
                 >
                   <div className="absolute top-0 right-0 -mr-10 -mt-10 w-32 h-32 bg-primary/5 rounded-full blur-[40px] group-hover:bg-primary/10 transition-colors"></div>
                   
-                  <div className="relative z-10 flex items-center gap-4 md:gap-6 w-full"> {/* Reduced gap on mobile, added w-full */}
-                    <div className="flex-shrink-0 p-4 bg-primary/10 rounded-2xl text-primary group-hover:scale-110 transition-transform duration-500">
-                      <Icon size={24} strokeWidth={1.5} />
+                  <div className="relative z-10 flex items-center gap-3 sm:gap-4 md:gap-6 w-full">
+                    <div className="p-3 sm:p-4 bg-primary/10 rounded-2xl text-primary group-hover:scale-110 transition-transform duration-500 flex-shrink-0">
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={1.5} /> {/* Fixed: Responsive className */}
                     </div>
-                    <div className="min-w-0 flex-1"> {/* Key fix: flex-1 + min-w-0 allows shrinking */}
-                      <p className="text-xs md:text-sm font-mono text-primary mb-1 uppercase tracking-widest"> {/* Smaller text on mobile */}
+                    <div className="min-w-0 flex-1">
+                      <p className="text-xs sm:text-sm font-mono text-primary mb-1 uppercase tracking-widest">
                         {link.name}
                       </p>
-                      <p className="text-base md:text-lg font-bold text-white group-hover:text-primary transition-colors truncate"> {/* Added truncate + responsive size */}
+                      <p className="text-sm sm:text-base md:text-lg font-bold text-white group-hover:text-primary transition-colors break-all leading-tight">
                         {link.value}
                       </p>
                     </div>
-                    <ArrowRight size={20} className="ml-2 md:ml-auto flex-shrink-0 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-primary" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-1 sm:ml-auto flex-shrink-0 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-primary" />
                   </div>
                 </a>
               );
