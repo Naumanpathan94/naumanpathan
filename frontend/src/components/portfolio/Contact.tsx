@@ -40,15 +40,15 @@ export function Contact() {
                 >
                   <div className="absolute top-0 right-0 -mr-10 -mt-10 w-32 h-32 bg-primary/5 rounded-full blur-[40px] group-hover:bg-primary/10 transition-colors"></div>
                   
-                  <div className="relative z-10 flex items-center gap-3 sm:gap-4 md:gap-6 w-full">
+                  <div className="relative z-10 flex items-center gap-3 sm:gap-4 lg:gap-6 w-full h-full"> {/* lg:gap-6 for desktop, h-full for alignment */}
                     <div className="p-3 sm:p-4 bg-primary/10 rounded-2xl text-primary group-hover:scale-110 transition-transform duration-500 flex-shrink-0">
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={1.5} /> {/* Fixed: Responsive className */}
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={1.5} />
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="text-xs sm:text-sm font-mono text-primary mb-1 uppercase tracking-widest">
                         {link.name}
                       </p>
-                      <p className="text-sm sm:text-base md:text-lg font-bold text-white group-hover:text-primary transition-colors break-all leading-tight">
+                      <p className="text-sm sm:text-base lg:text-xl font-bold text-white group-hover:text-primary transition-colors whitespace-nowrap sm:whitespace-normal overflow-hidden break-normal sm:break-all">
                         {link.value}
                       </p>
                     </div>
