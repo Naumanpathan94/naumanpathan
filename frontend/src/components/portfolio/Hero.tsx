@@ -4,10 +4,7 @@ import { TypingAnimation } from "./TypingAnimation";
 
 export function Hero() {
   const typingTexts = [
-    "Full-Stack Developer",
-    "AI Enthusiast",
-    "ML Engineer",
-    "Problem Solver"
+    "Data Analyst Intern @TCS"
   ];
 
   return (
@@ -164,6 +161,22 @@ export function Hero() {
               <div className="space-y-8">
                 <div className="relative pl-8 border-l-2 border-primary/30">
                   <div className="absolute left-[-9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
+                  <p className="text-xl text-foreground font-bold">Data Analyst Intern</p>
+                  <p className="text-sm text-muted-foreground mb-1">Tata Consultancy Services (TCS)</p>
+                  <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Jan 2026 - Present</p>
+                  <ul className="text-sm text-muted-foreground space-y-3 list-none">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold">▹</span>
+                      Working in TCS Marketing Unit, focusing on digital analytics and campaign insights.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold">▹</span>
+                      Leveraging Microsoft Power BI and Data Analysis for data-driven storytelling.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="relative pl-8 border-l-2 border-white/10">
                   <p className="text-xl text-foreground font-bold">Web Applications Developer</p>
                   <p className="text-sm text-muted-foreground mb-1">Campus Credentials</p>
                   <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Aug 2025 - Sep 2025</p>
@@ -171,10 +184,6 @@ export function Hero() {
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold">▹</span>
                       Worked on AI Resume Analysis Tool implementing Authentication, Database and Ollama AI.
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-primary font-bold">▹</span>
-                      Delivered a responsive corporate landing page.
                     </li>
                   </ul>
                   
