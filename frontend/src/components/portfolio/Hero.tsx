@@ -4,7 +4,7 @@ import { TypingAnimation } from "./TypingAnimation";
 
 export function Hero() {
   const typingTexts = [
-    "Data Analyst Intern @TCS"
+    "Data Analyst Intern @TCS",
   ];
 
   return (
@@ -66,7 +66,7 @@ export function Hero() {
             <div className="relative w-28 h-28 md:w-32 md:h-32 group">
               <div className="avatar-glow-effect transition-all duration-700 group-hover:opacity-40 group-hover:scale-105"></div>
               <div className="avatar-frame"></div>
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl -z-10"></div>
+              <div className="absolute inset-0 bg-linear-to-tr from-primary/10 to-transparent rounded-2xl -z-10"></div>
               
               {/* Avatar Image */}
               <img 
@@ -177,13 +177,17 @@ export function Hero() {
                 </div>
 
                 <div className="relative pl-8 border-l-2 border-white/10">
-                  <p className="text-xl text-foreground font-bold">Web Applications Developer</p>
+                  <p className="text-xl text-foreground font-bold">Web Applications Developer Intern</p>
                   <p className="text-sm text-muted-foreground mb-1">Campus Credentials</p>
                   <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Aug 2025 - Sep 2025</p>
                   <ul className="text-sm text-muted-foreground space-y-3 list-none">
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold">▹</span>
                       Worked on AI Resume Analysis Tool implementing Authentication, Database and Ollama AI.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold">▹</span>
+                      Delivered a corporate landing page.
                     </li>
                   </ul>
                   
