@@ -4,7 +4,7 @@ import { TypingAnimation } from "./TypingAnimation";
 
 export function Hero() {
   const typingTexts = [
-    "Marketing Data Analyst Intern @TCS",
+    "Data Analyst Intern @TCS",
   ];
 
   return (
@@ -161,7 +161,7 @@ export function Hero() {
               <div className="space-y-8">
                 <div className="relative pl-8 border-l-2 border-primary/30">
                   <div className="absolute left-[-9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
-                  <p className="text-xl text-foreground font-bold">Marketing Data Analyst Intern</p>
+                  <p className="text-xl text-foreground font-bold">Data Analyst Intern</p>
                   <p className="text-sm text-muted-foreground mb-1">Tata Consultancy Services (TCS)</p>
                   <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Jan 2026 - Present</p>
                 </div>
