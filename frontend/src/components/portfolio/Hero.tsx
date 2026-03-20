@@ -4,7 +4,7 @@ import { TypingAnimation } from "./TypingAnimation";
 
 export function Hero() {
   const typingTexts = [
-    "Data Science Intern @TCS",
+    "BIU Intern @Piramal Finance",
   ];
 
   return (
@@ -161,9 +161,25 @@ export function Hero() {
               <div className="space-y-8">
                 <div className="relative pl-8 border-l-2 border-primary/30">
                   <div className="absolute left-[-9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
-                  <p className="text-xl text-foreground font-bold">Data Science Intern</p>
+                  <p className="text-xl text-foreground font-bold">BIU Intern</p>
+                  <p className="text-sm text-muted-foreground mb-1">Piramal Finance</p>
+                  <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Mar 2026 - Present</p>
+                </div>
+
+                <div className="relative pl-8 border-l-2 border-primary/30">
+                  <div className="absolute left-[-9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
+                  <p className="text-xl text-foreground font-bold">Data Analyst Intern</p>
                   <p className="text-sm text-muted-foreground mb-1">Tata Consultancy Services (TCS)</p>
-                  <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Jan 2026 - Present</p>
+                  <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Jan 2026 - Mar 2026</p>
+                  <a 
+                    href="/internship completion certificate.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-6 py-3 mt-6 bg-primary/10 hover:bg-primary/20 text-primary text-sm font-bold rounded-full transition-all border border-primary/20 group/link"
+                  >
+                    <Download size={16} className="group-hover/link:translate-y-1 transition-transform" />
+                    Completion Letter
+                  </a>
                 </div>
 
                 <div className="relative pl-8 border-l-2 border-white/10">
