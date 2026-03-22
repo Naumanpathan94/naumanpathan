@@ -171,6 +171,20 @@ export function Hero() {
                   <p className="text-xl text-foreground font-bold">Data Analyst Intern</p>
                   <p className="text-sm text-muted-foreground mb-1">Tata Consultancy Services (TCS)</p>
                   <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Jan 2026 - Mar 2026</p>
+                  <ul className="text-sm text-muted-foreground space-y-3 list-none">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold">▹</span>
+                       Developed Python script to generate 100,000+ size synthetic marketing dataset for POC.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold">▹</span>
+                      Developed Python script using raw account data and weighted attributes to automate scoring model; classified accounts by marketing funnel stage.
+                    </li>
+                      <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold">▹</span>
+                      Developed Power BI dashboards and DAX measures to segment unique visitors by engagement patterns enabling campaign optimization.
+                    </li>
+                  </ul>
                   <a 
                     href="/internship completion certificate.pdf"
                     target="_blank"
