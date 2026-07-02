@@ -4,7 +4,7 @@ import { TypingAnimation } from "./TypingAnimation";
 
 export function Hero() {
   const typingTexts = [
-    "BIU Intern @Piramal Finance",
+    "Ex-BIU Intern @Piramal Finance",
   ];
 
   return (
@@ -67,12 +67,12 @@ export function Hero() {
               <div className="avatar-glow-effect transition-all duration-700 group-hover:opacity-40 group-hover:scale-105"></div>
               <div className="avatar-frame"></div>
               <div className="absolute inset-0 bg-linear-to-tr from-primary/10 to-transparent rounded-2xl -z-10"></div>
-              
+
               {/* Avatar Image */}
-              <img 
-                src="/avatar_final.jpg" 
-                alt="Nauman Pathan" 
-                className="relative z-10 w-full h-full rounded-2xl border border-white/10 shadow-xl object-cover object-top hover:grayscale-0 transition-all duration-500 scale-[0.98] group-hover:scale-100 opacity-90 group-hover:opacity-100" 
+              <img
+                src="/avatar_final.jpg"
+                alt="Nauman Pathan"
+                className="relative z-10 w-full h-full rounded-2xl border border-white/10 shadow-xl object-cover object-top hover:grayscale-0 transition-all duration-500 scale-[0.98] group-hover:scale-100 opacity-90 group-hover:opacity-100"
               />
             </div>
           </div>
@@ -82,9 +82,9 @@ export function Hero() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/40">
               Nauman Pathan
             </h1>
-            
+
             <p className="text-2xl md:text-4xl text-foreground font-bold h-10 md:h-14">
-              <TypingAnimation 
+              <TypingAnimation
                 texts={typingTexts}
                 speed={80}
                 className="font-bold tracking-tight"
@@ -97,17 +97,17 @@ export function Hero() {
             <p className="text-sm md:text-base text-primary font-mono bg-primary/10 py-1.5 px-6 rounded-full inline-block border border-primary/20">
               B.Tech Computer Engineering | Minor in Data Science | 2026
             </p>
-            
+
             <p className="text-lg md:text-2xl text-foreground/90 leading-relaxed font-light">
-              Pursuing engineering at <span className="text-primary font-semibold">DYPU-RAIT</span>. 
+              Pursuing engineering at <span className="text-primary font-semibold">DYPU-RAIT</span>.
               Architecting intelligent systems and scalable digital experiences through code and data.
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-5 mb-16 md:mb-24">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="gap-2 h-14 md:h-16 px-10 md:px-12 text-lg font-semibold rounded-full border border-white/10 bg-white/5 text-white hover:bg-white/10 hover:border-primary/30 transition-all active:scale-95 shadow-none"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
@@ -124,7 +124,7 @@ export function Hero() {
                 </div>
                 <h3 className="font-bold text-2xl">Education</h3>
               </div>
-              
+
               <div className="space-y-8">
                 <div className="relative pl-8 border-l-2 border-primary/30">
                   <div className="absolute left-[-9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
@@ -163,7 +163,36 @@ export function Hero() {
                   <div className="absolute left-[-9px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
                   <p className="text-xl text-foreground font-bold">BIU Intern</p>
                   <p className="text-sm text-muted-foreground mb-1">Piramal Finance</p>
-                  <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Mar 2026 - Present</p>
+                  <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">
+                    Mar 2026 - June 2026
+                  </p>
+                  <ul className="text-sm text-muted-foreground space-y-3 list-none">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold shrink-0 mt-1">▹</span>
+
+                      <p className="flex-1 leading-relaxed text-muted-foreground break-words">
+                        Built an AI flyer generation application,
+                        <span className="font-medium"> Build Your Own Flyer</span>,
+                        using Google Gemini, Vertex AI, Flask, and React, enabling marketing teams to create brand-compliant flyers from natural language prompts with automatic spelling correction and template preservation.
+                      </p>
+                    </li>
+
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold shrink-0 mt-1">▹</span>
+
+                      <p className="flex-1 leading-relaxed text-muted-foreground break-words">
+                        Automated social media data extraction and built analytical datasets for time-series analysis and business reporting.
+                      </p>
+                    </li>
+
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary font-bold shrink-0 mt-1">▹</span>
+
+                      <p className="flex-1 leading-relaxed text-muted-foreground break-words">
+                        Developed AWS Glue job to monitor and report the status of all SOR automailer Glue jobs, enabling proactive issue detection and improved operational efficiency.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
 
                 <div className="relative pl-8 border-l-2 border-primary/30">
@@ -173,19 +202,22 @@ export function Hero() {
                   <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Jan 2026 - Mar 2026</p>
                   <ul className="text-sm text-muted-foreground space-y-3 list-none">
                     <li className="flex items-start gap-3">
-                      <span className="text-primary font-bold">▹</span>
-                       Developed Python script to generate 100,000+ size synthetic marketing dataset for POC.
+                      <span className="text-primary font-bold shrink-0 mt-1">▹</span>
+
+                      <p className="flex-1 leading-relaxed text-muted-foreground break-words">
+                        Developed Python scripts to generate a 400,000+ row synthetic marketing dataset for POC and automate scoring model using raw account data with weighted attributes; classified accounts by marketing funnel stage.
+                      </p>
                     </li>
+
                     <li className="flex items-start gap-3">
-                      <span className="text-primary font-bold">▹</span>
-                      Developed Python script using raw account data and weighted attributes to automate scoring model; classified accounts by marketing funnel stage.
-                    </li>
-                      <li className="flex items-start gap-3">
-                      <span className="text-primary font-bold">▹</span>
-                      Developed Power BI dashboards and DAX measures to segment unique visitors by engagement patterns enabling campaign optimization.
+                      <span className="text-primary font-bold shrink-0 mt-1">▹</span>
+
+                      <p className="flex-1 leading-relaxed text-muted-foreground break-words">
+                        Developed Power BI dashboards for TCS-North America integrating Adobe Analytics data and DAX measures to segment unique visitors by engagement patterns, enabling campaign optimization.
+                      </p>
                     </li>
                   </ul>
-                  <a 
+                  <a
                     href="/internship completion certificate.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -202,16 +234,23 @@ export function Hero() {
                   <p className="text-xs text-primary font-mono font-bold mb-4 whitespace-nowrap">Aug 2025 - Sep 2025</p>
                   <ul className="text-sm text-muted-foreground space-y-3 list-none">
                     <li className="flex items-start gap-3">
-                      <span className="text-primary font-bold">▹</span>
-                      Worked on AI Resume Analysis Tool implementing Authentication, Database and Ollama AI.
+                      <span className="text-primary font-bold shrink-0 mt-1">▹</span>
+
+                      <p className="flex-1 leading-relaxed text-muted-foreground break-words">
+                        Worked on AI Resume Analysis Tool implementing Authentication, Database and Ollama AI.
+                      </p>
                     </li>
+
                     <li className="flex items-start gap-3">
-                      <span className="text-primary font-bold">▹</span>
-                      Delivered a corporate landing page.
+                      <span className="text-primary font-bold shrink-0 mt-1">▹</span>
+
+                      <p className="flex-1 leading-relaxed text-muted-foreground break-words">
+                        Delivered a corporate landing page.
+                      </p>
                     </li>
                   </ul>
-                  
-                  <a 
+
+                  <a
                     href="/completion_letter_1766911464216.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
